@@ -7,10 +7,9 @@ from asyncpg.pool import Pool
 # Database connection information
 DATABASE_URL = "postgresql://postgres:Vikash8435@localhost:5432/mydatabase"
 
-# FastAPI app instance
+
 app = FastAPI()
 
-# Pydantic models for request and response
 class Employee(BaseModel):
     first_name: str
     middle_name: str = None
